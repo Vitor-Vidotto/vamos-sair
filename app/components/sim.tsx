@@ -20,13 +20,13 @@ const SimPage = () => {
 const styles = {
   container: {
     display: "flex",
-    flexDirection: "column" as const, // Usando 'as const' para garantir que o valor seja tratado corretamente
+    flexDirection: "column" as const, // Garantir que 'flexDirection' seja tratado como valor literal
     alignItems: "center",
     justifyContent: "center",
     height: "100vh",
     backgroundColor: "#f9e3e3",
     fontFamily: "'Arial', sans-serif",
-    textAlign: "center",
+    textAlign: "center" as const, // Adicionando 'as const' em 'textAlign'
   },
   header: {
     fontSize: "2.5em",
