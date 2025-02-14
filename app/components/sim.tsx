@@ -1,12 +1,12 @@
 // pages/sim.tsx
 "use client"
 import React from "react";
-import Link from "next/link";
+import Image from "next/image";
 
 const SimPage = () => {
   return (
     <div style={styles.container}>
-               <img
+               <Image
           src="https://31.media.tumblr.com/d3b5f0fd7426882132233e430a0f8c43/tumblr_msyxi24JKz1rgp9bio1_500.gif"
           alt="Cute GIF"
           style={styles.gifImage}

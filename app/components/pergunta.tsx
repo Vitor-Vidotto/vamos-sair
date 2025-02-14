@@ -1,6 +1,6 @@
 "use client"
 import { useState } from "react";
-
+import Image from 'next/image'; 
 const Pergunta = () => {
   const [messageIndex, setMessageIndex] = useState(0);
   const [fontSize, setFontSize] = useState(1.5);
@@ -31,7 +31,7 @@ const Pergunta = () => {
   return (
     <div style={styles.container}>
         <div style={styles.container}>
-               <img
+               <Image
           src="https://media.tenor.com/RBa37_6ApVcAAAAi/cute-adorable.gif"
           alt="Cute GIF"
           style={styles.gifImage}
@@ -46,7 +46,7 @@ const Pergunta = () => {
         </button>
       </div>
       <div style={styles.gifContainer}>
-        <img
+        <Image
           src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExbW5lenZyZHI5OXM2eW95b3pmMG40cWVrMDhtNjVuM3A4dGNxa2g2dSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/VM1fcpu2bKs1e2Kdbj/giphy.gif"
           alt="Cute GIF"
           style={styles.gifImage}
