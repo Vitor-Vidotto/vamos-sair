@@ -1,10 +1,11 @@
-"use client"
+"use client";
 import { useState } from "react";
-import Image from 'next/image'; 
+import Image from "next/image";
+
 const Pergunta = () => {
   const [messageIndex, setMessageIndex] = useState(0);
   const [fontSize, setFontSize] = useState(1.5);
-  
+
   const messages = [
     "Não! (tem certeza?)",
     "Certeza certa?",
@@ -14,8 +15,8 @@ const Pergunta = () => {
     "Se você disser não vou ficar muito triste...",
     "Triste borocochó...",
     "Vai fazer isso mesmo...",
-    "Okay, vou parar de inisistir...",
-    "BRINCADEIRA, DIZ SIM! ❤️"
+    "Okay, vou parar de insistir...",
+    "BRINCADEIRA, DIZ SIM! ❤️",
   ];
 
   const handleNoClick = () => {
@@ -23,19 +24,19 @@ const Pergunta = () => {
     setFontSize((prevSize) => prevSize * 1.45); // Aumenta o tamanho do botão "Sim"
   };
 
-
   const handleYesClick = () => {
     window.location.href = "/sim"; // Redireciona para a página /sim
   };
-  
+
   return (
     <div style={styles.container}>
-        <div style={styles.container}>
-               <Image
+      <div style={styles.gifContainer}>
+        <Image
           src="https://media.tenor.com/RBa37_6ApVcAAAAi/cute-adorable.gif"
           alt="Cute GIF"
           style={styles.gifImage}
-        /></div>
+        />
+      </div>
       <h1 style={styles.header}>Quer sair comigo?</h1>
       <div style={styles.buttons}>
         <button style={styles.yesButton(fontSize)} onClick={handleYesClick}>
