@@ -1,4 +1,3 @@
-// pages/sim.tsx
 "use client"
 import React from "react";
 import Image from "next/image";
@@ -6,15 +5,14 @@ import Image from "next/image";
 const SimPage = () => {
   return (
     <div style={styles.container}>
-               <Image
-          src="https://31.media.tumblr.com/d3b5f0fd7426882132233e430a0f8c43/tumblr_msyxi24JKz1rgp9bio1_500.gif"
-          alt="Cute GIF"
-          style={styles.gifImage}
-        />
+      <Image
+        src="https://31.media.tumblr.com/d3b5f0fd7426882132233e430a0f8c43/tumblr_msyxi24JKz1rgp9bio1_500.gif"
+        alt="Cute GIF"
+        style={styles.gifImage}
+      />
       <h1 style={styles.header}>Você disse sim!!!! 💖</h1>
       <p style={styles.paragraph}>Te busco assim que você falar que posso ir! 😍</p>
-      <div style={styles.buttonContainer}>
-      </div>
+      <div style={styles.buttonContainer}></div>
     </div>
   );
 };
@@ -22,7 +20,7 @@ const SimPage = () => {
 const styles = {
   container: {
     display: "flex",
-    flexDirection: "column",
+    flexDirection: "column" as const, // Usando 'as const' para garantir que o valor seja tratado corretamente
     alignItems: "center",
     justifyContent: "center",
     height: "100vh",
