@@ -66,7 +66,7 @@ const styles = {
     margin: 0,
     backgroundColor: "#f9e3e3",
     fontFamily: "'Arial', sans-serif",
-    flexDirection: "column",
+    flexDirection: "column" as "column", // Corrigido aqui para garantir que é um valor válido
   },
   header: {
     fontSize: "2.5em",
