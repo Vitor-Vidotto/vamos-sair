@@ -32,7 +32,9 @@ const Pergunta = () => {
     <div style={styles.container}>
       <div style={styles.gifContainer}>
         <Image
-          src="./gif1.gif"
+          src="/gif1.gif"
+          width={400}   // Defina uma largura inicial
+          height={200} 
           alt="Cute GIF"
           style={styles.gifImage}
         />

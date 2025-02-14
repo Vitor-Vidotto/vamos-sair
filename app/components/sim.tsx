@@ -8,6 +8,8 @@ const SimPage = () => {
       <Image
         src="/gif2.gif"
         alt="Cute GIF"
+        width={600}   // Defina uma largura inicial
+        height={400} 
         style={styles.gifImage}
       />
       <h1 style={styles.header}>Você disse sim!!!! 💖</h1>

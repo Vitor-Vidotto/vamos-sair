@@ -1,4 +1,4 @@
-"use client"
+
 import Pergunta from "./components/pergunta";
 
 export default function Home() {
