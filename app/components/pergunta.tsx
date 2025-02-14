@@ -32,7 +32,7 @@ const Pergunta = () => {
     <div style={styles.container}>
       <div style={styles.gifContainer}>
         <Image
-          src="https://media.tenor.com/RBa37_6ApVcAAAAi/cute-adorable.gif"
+          src="./gif1.gif"
           alt="Cute GIF"
           style={styles.gifImage}
         />
@@ -45,13 +45,6 @@ const Pergunta = () => {
         <button style={styles.noButton} onClick={handleNoClick}>
           {messages[messageIndex]}
         </button>
-      </div>
-      <div style={styles.gifContainer}>
-        <Image
-          src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExbW5lenZyZHI5OXM2eW95b3pmMG40cWVrMDhtNjVuM3A4dGNxa2g2dSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/VM1fcpu2bKs1e2Kdbj/giphy.gif"
-          alt="Cute GIF"
-          style={styles.gifImage}
-        />
       </div>
     </div>
   );
