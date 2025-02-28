@@ -46,7 +46,7 @@ const Pergunta = () => {
     if (attempts > 1) {
       setAttempts(attempts - 1);
       setMessageIndex((prevIndex) => (prevIndex + 1) % messages.length);
-      setFontSize((prevSize) => prevSize * 1.45);
+      setFontSize((prevSize) => prevSize * 1.35);
       setGifIndex((prevIndex) => (prevIndex + 1) % gifs.length);
       setBgColor(`#${Math.floor(Math.random() * 16777215).toString(16)}`);
     } else {
