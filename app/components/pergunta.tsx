@@ -18,7 +18,7 @@ const Pergunta = () => {
     "Por favor pequena... 😇",
     "Pensa um pouquinho vai 🧠",
     "Se você disser não vou ficar muito triste... 😢",
-    "Triste borocochó... 😞",
+    "Triste borocoxó... 😞",
     "Vai fazer isso mesmo... 😬",
     "Vou ter que te seduzir!",
     "BRINCADEIRA, DIZ SIM! ❤️🥰",
